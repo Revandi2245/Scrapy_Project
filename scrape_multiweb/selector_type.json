@@ -1,0 +1,42 @@
+[
+    {
+        "name": "title",
+        "is_required": true,
+        "description": "Article's main title"
+    },
+    {
+        "name": "body",
+        "is_required": true,
+        "description": "Article's body text/paragraphs"
+    },
+    {
+        "name": "description",
+        "is_required": false,
+        "description": "Article's description"
+    },
+    {
+        "name": "images",
+        "is_required": true,
+        "description": "Aritlce's image url list"
+    },
+    {
+        "name": "authors",
+        "is_required": true,
+        "description": "Article's author list"
+    },
+    {
+        "name": "language",
+        "is_required": true,
+        "description": "Article's language"
+    },
+    {
+        "name": "published_at",
+        "is_required": true,
+        "description": "Article's publish time"
+    },
+    {
+        "name": "article_url_list",
+        "is_required": true,
+        "description": "Portal news url list"
+    }
+]

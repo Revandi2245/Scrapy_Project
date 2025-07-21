@@ -1,0 +1,34 @@
+[
+    {
+        "portal_id": 1,
+        "selector_type_id": 8,
+        "method": "css",
+        "query": "div.post-title a::attr(href)",
+        "is_list": true,
+        "order": 0,
+        "post_processing": {
+            "strip": true,
+            "replace": [
+            ["\\n", ""],
+            ["\\t", ""]
+            ]
+        },
+        "is_active": true
+    },
+    {
+        "portal_id": 2,
+        "selector_type_id": 8,
+        "method": "css",
+        "query": "li.list-group-item.list-border.conten1 a::attr(href)",
+        "is_list": true,
+        "order": 0,
+        "post_processing": {
+            "strip": true,
+            "replace": [
+            ["\\n", ""],
+            ["\\t", ""]
+            ]
+        },
+        "is_active": true
+    }
+]

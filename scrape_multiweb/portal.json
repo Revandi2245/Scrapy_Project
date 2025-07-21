@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Aksara Loka",
+        "domain": "aksaraloka.com",
+        "seed_urls": [
+            "https://aksaraloka.com/"
+        ],
+        "origin_type": "regional",
+        "country": "Indonesia",
+        "city": "Pontianak",
+        "language": "id",
+        "is_active": true,
+        "robots_txt": "",
+        "sitemap_url": ""
+    },
+    {
+        "name": "Republika Ameera",
+        "domain": "ameera.republika.co.id",
+        "seed_urls": [
+            "https://ameera.republika.co.id/"
+        ],
+        "origin_type": "national",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "language": "id",
+        "is_active": true,
+        "robots_txt": "",
+        "sitemap_url": ""
+    }
+]

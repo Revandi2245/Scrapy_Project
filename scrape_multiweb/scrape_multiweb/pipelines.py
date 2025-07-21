@@ -6,6 +6,24 @@
 
 # useful for handling different item types with a single interface
 import psycopg2
+import json
+from kafka import KafkaProducer
+
+class KafkaPipeline:
+    def __init__(self):
+        self.producer = KafkaProducer(
+            bootstrap_servers='localhost:9092',
+            value_serializer=lambda v: json.dumps(v).encode('utf-8')
+        )
+
+    def process_item(self, item, spider):
+        try:
+            self.producer.send('scraped_urls_topic', dict(item))
+            spider.logger.info(f"[Kafka] Berhasil kirim: {item['url']}")
+        except Exception as e:
+            spider.logger.warning(f"[Kafka] Gagal kirim data: {e}")
+        return item
+
 
 class PostgresURLPipeline:
 
