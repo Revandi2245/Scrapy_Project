@@ -39,7 +39,7 @@ services:
     depends_on:
       - zookeeper
 
-  # Kafka UI (opsional)
+  # Kafka UI
   kafka-ui:
     image: provectuslabs/kafka-ui
     container_name: kafka-ui
